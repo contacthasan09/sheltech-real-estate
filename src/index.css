@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #08082b;
+  --ink-soft: #212158;
+  --mist: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #08082b;
+  background: #f5f5f5;
+}
+
+.container-max {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.heading-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #f5f5f5;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+.btn-outline-light:hover { opacity: 0.7; }
+
+.btn-outline-muted {
+  background: transparent;
+  color: rgba(245, 245, 245, 0.5);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.btn-outline-muted:hover { color: #f5f5f5; }
+
+.input-pill {
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-size: 15px;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+.input-pill::placeholder { color: rgba(245, 245, 245, 0.5); }
+
+.input-line {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #08082b;
+  color: #08082b;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 6px 0;
+  outline: none;
+}
+.input-line::placeholder { color: rgba(8, 8, 43, 0.5); }
+
+.page-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.page-hero h1 {
+  position: relative;
+  z-index: 1;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 0 40px;
+  padding: 0 20px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.section-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #08082b;
+  line-height: 1.2;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+}
